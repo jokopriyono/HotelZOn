@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/minus" />
+        <TextView
+            android:text="@string/app_name"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#afafaf"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="Pilih Kota"
+                android:inputType="text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint="Check In"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="Check Out"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <EditText
+                android:hint="Jumlah Kamar"
+                android:inputType="text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_cari"
+                android:text="Cari"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:gravity="center"
+        android:background="@android:color/holo_purple"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <TextView
+            android:text="Space promosi terbaru"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:textStyle="italic"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginBottom="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:text="Space promosi terbaru"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

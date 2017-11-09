@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HotelZ On</string>
+    <string name="minus">-</string>
+    <string name="pesan_sekarang">Pesan Sekarang</string>
+    <string name="layanan_dan_fasilitas">Layanan dan Fasilitas</string>
+    <string name="ac">AC</string>
+    <string name="tv_led">TV LED</string>
+    <string name="wifi">WIFI</string>
+    <string name="air">Air Minum</string>
+    <string name="peralatan">Peralatan Mandi</string>
+    <string name="parkir">Tempat Parkir</string>
+    <string name="total_harga">Total harga :</string>
+</resources>
