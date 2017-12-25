@@ -10,4 +10,17 @@
     <string name="peralatan">Peralatan Mandi</string>
     <string name="parkir">Tempat Parkir</string>
     <string name="total_harga">Total harga :</string>
+    <string name="pembayaran">Pilih metode pembayaran</string>
+    <string name="cash">Cash</string>
+    <string name="kartu_kredit">Kartu kredit</string>
+    <string name="visa">VISA</string>
+    <string name="master_card">Master Card</string>
+    <string name="transfer_atm">Transfer ATM</string>
+    <string name="bayar">Bayar dan Cetak Tiket Hotel</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="butuh_bantuan">Butuh bantuan ?</string>
 </resources>

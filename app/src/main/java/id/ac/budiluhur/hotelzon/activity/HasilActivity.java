@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,5 +31,12 @@ public class HasilActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
+
+        Spinner spinFilter = findViewById(R.id.spin_filter);
+        String[] languages = {"Pilih"};
+        ArrayAdapter<String> langAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, languages);
+        langAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinFilter.setAdapter(langAdapter);
+
     }
 }
