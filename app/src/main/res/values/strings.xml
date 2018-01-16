@@ -23,4 +23,6 @@
     <string name="belum_punya_akun">Belum punya akun?</string>
     <string name="registrasi">Registrasi</string>
     <string name="butuh_bantuan">Butuh bantuan ?</string>
+    <string name="pilih_kota">Pilih Kota</string>
+    <string name="simpan_data_kartu">Simpan Data Kartu</string>
 </resources>

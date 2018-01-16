@@ -5,12 +5,22 @@ package id.ac.budiluhur.hotelzon;
  */
 
 public class RoomData {
+    private Integer id;
     private String nama;
     private String harga;
 
-    public RoomData(String nama, String harga) {
+    public RoomData(Integer id, String nama, String harga) {
+        this.id = id;
         this.nama = nama;
         this.harga = harga;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNama() {

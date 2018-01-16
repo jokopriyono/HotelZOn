@@ -8,29 +8,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:src="@mipmap/ic_launcher"
-            android:background="@android:color/holo_purple"
+            android:src="@drawable/hotel1"
+            android:scaleType="centerCrop"
             android:layout_marginBottom="1dp"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:contentDescription="@string/minus" />
         <ImageView
-            android:src="@mipmap/ic_launcher"
-            android:background="@android:color/darker_gray"
+            android:src="@drawable/hotel2"
+            android:scaleType="centerCrop"
             android:layout_marginBottom="1dp"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:contentDescription="@string/minus" />
         <ImageView
-            android:src="@mipmap/ic_launcher"
-            android:background="@android:color/holo_blue_dark"
+            android:src="@drawable/hotel3"
+            android:scaleType="centerCrop"
             android:layout_marginBottom="1dp"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:contentDescription="@string/minus" />
         <ImageView
-            android:src="@mipmap/ic_launcher"
-            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/promo1"
+            android:scaleType="centerCrop"
             android:layout_marginBottom="1dp"
             android:layout_width="match_parent"
             android:layout_height="150dp"

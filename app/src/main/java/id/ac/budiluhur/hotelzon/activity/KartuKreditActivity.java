@@ -8,14 +8,18 @@ import android.widget.Button;
 
 import id.ac.budiluhur.hotelzon.R;
 
-public class RegistrasiActivity extends AppCompatActivity {
+public class KartuKreditActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registrasi);
+        setContentView(R.layout.activity_kartu_kredit);
 
-        Toolbar toolbar = findViewById(R.id.toolbar_registrasi);
+        Toolbar toolbar = findViewById(R.id.toolbar_kartu_kredit);
+        setSupportActionBar(toolbar);
+        setTitle("Data Kartu Kredit");
+
+        toolbar.setTitleTextColor(getResources().getColor(R.color.colorAccent));
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.v_back));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,8 +28,8 @@ public class RegistrasiActivity extends AppCompatActivity {
             }
         });
 
-        Button btnDaftar = findViewById(R.id.btn_registrasi);
-        btnDaftar.setOnClickListener(new View.OnClickListener() {
+        Button btnSimpan = findViewById(R.id.btn_simpan);
+        btnSimpan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();

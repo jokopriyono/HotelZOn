@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="10dp"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_registrasi"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:titleTextColor="@android:color/white" >
         <ImageView
-            android:src="@mipmap/ic_launcher"
-            android:layout_width="60dp"
-            android:layout_height="60dp" />
-        <TextView
-            android:text="HotelZ ON"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+            android:contentDescription="@string/minus"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/v_logo"/>
+    </android.support.v7.widget.Toolbar>
     <LinearLayout
         android:background="#afafaf"
         android:layout_width="match_parent"
@@ -74,12 +75,14 @@
         <Button
             android:id="@+id/btn_registrasi"
             android:text="Daftar"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
             android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
-        android:gravity="right"
+        android:gravity="end"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

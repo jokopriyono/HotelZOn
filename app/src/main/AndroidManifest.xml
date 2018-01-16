@@ -20,7 +20,8 @@
         <activity android:name=".activity.CariActivity" />
         <activity android:name=".activity.HasilActivity" />
         <activity android:name=".activity.DetailActivity" />
-        <activity android:name=".activity.PaymentActivity"></activity>
+        <activity android:name=".activity.PaymentActivity" />
+        <activity android:name=".activity.KartuKreditActivity"></activity>
     </application>
 
 </manifest>

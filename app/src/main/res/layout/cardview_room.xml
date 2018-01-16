@@ -18,16 +18,16 @@
         android:orientation="vertical"
         android:gravity="center">
         <ImageView
+            android:id="@+id/img_hotel"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@android:color/holo_purple"
-            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
             android:contentDescription="@string/minus" />
         <TextView
             android:id="@+id/txt_judul"
-            android:paddingTop="5dp"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"/>
@@ -35,6 +35,9 @@
             android:id="@+id/txt_harga"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"/>

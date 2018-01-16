@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -48,8 +49,21 @@ public class DetailActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         TextView txtHarga = findViewById(R.id.txt_harga);
-        String harga = "Total harga : "+getIntent().getStringExtra("harga");
+        String harga = getIntent().getStringExtra("harga");
         txtHarga.setText(harga);
+
+        ImageView imgHotel = findViewById(R.id.img_hotel);
+        Integer idHotel = getIntent().getIntExtra("id", 1);
+        if (idHotel == 1){
+            int id = getResources().getIdentifier("hotel1", "drawable", getPackageName());
+            imgHotel.setImageResource(id);
+        } else if (idHotel == 2){
+            int id = getResources().getIdentifier("hotel2", "drawable", getPackageName());
+            imgHotel.setImageResource(id);
+        } else {
+            int id = getResources().getIdentifier("hotel3", "drawable", getPackageName());
+            imgHotel.setImageResource(id);
+        }
 
         Button btnPesan = findViewById(R.id.btn_pesan);
         btnPesan.setOnClickListener(new View.OnClickListener() {
